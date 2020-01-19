@@ -20,7 +20,11 @@ body {
     transform: translate(-50%, -50%);
 }
 
-div.campus a{
+div.campus img:active {
+    transform: scale(1.5);
+}
+
+div.campus {
     font-size: xx-large;
 }
 
@@ -30,6 +34,7 @@ div.campus img:hover {
 }
 
 div.campus img{
+    transition: transform .2s;
     /* Full height */
     height: 105vh;
     width: 50%;

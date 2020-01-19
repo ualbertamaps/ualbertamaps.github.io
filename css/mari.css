@@ -20,9 +20,6 @@ body {
     transform: translate(-50%, -50%);
 }
 
-div.campus img:active {
-    transform: scale(1.5);
-}
 
 div.campus {
     font-size: xx-large;

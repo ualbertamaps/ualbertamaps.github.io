@@ -1,11 +1,11 @@
-function changeImage() {
+function changeImage(toURL) {
 
-    if (document.getElementByClassName("imgClickAndChange").src == "http://www.userinterfaceicons.com/80x80/minimize.png") 
-    {
-        document.getElementById("imgClickAndChange").src = "http://www.userinterfaceicons.com/80x80/maximize.png";
-    }
-    else 
-    {
-        document.getElementById("imgClickAndChange").src = "http://www.userinterfaceicons.com/80x80/minimize.png";
-    }
+    var images = document.getElementsByTagName("img");
+    images[0].src = toURL;
+    images[0].style.width = "100%";
+    images[0].style.height = "100vh";
+    var north = document.getElementsByClassName("north");
+    var south = document.getElementsByClassName("south");
+    north[0].style.visibility = "hidden";
+    south[0].style.visibility = "hidden";
 }

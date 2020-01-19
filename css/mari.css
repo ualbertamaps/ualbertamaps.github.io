@@ -1,0 +1,39 @@
+body {
+    margin: 0px;
+}
+.info {
+    text-align: center;
+    padding: 1vh 2vh;
+    background-color: #ddffdd;
+}
+
+.north {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+.south {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+
+div.campus {
+    font-size: xx-large;
+}
+
+div.campus img:hover {
+    border: 10px solid yellowgreen;
+    box-sizing: border-box;
+}
+
+div.campus img{
+    transition: transform .2s;
+    /* Full height */
+    height: 105vh;
+    width: 50%;
+    float: left;
+}

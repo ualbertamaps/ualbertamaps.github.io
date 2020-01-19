@@ -2,13 +2,18 @@
 <html>
 	<head>
         <title>UAlberta Map</title>
-        <link rel="stylesheet" href="css/mari.css">
+		<link rel="stylesheet" href="css/mari.css">
+		<link rel="stylesheet" href="css/amanda.css">
+		
     </head>
     
 	<body>
+		
 		<script src="function.js"></script>
 		<div class="info">
 			<p><strong>Welcome To UAlberta Map!</strong> click on the campus you want to go to</p>
+			<input id="searchbar" onkeyup="search_building()" type="text"
+			name="search" placeholder="Search building.."> 
 		</div>
 
 		<div class ="campus">
@@ -16,6 +21,9 @@
 			<div class="north">North Campus</div>
 			<img src="images/MainSouthCamp.png">
 			<div class="south">South Campus</div>
-        </div>
+		</div>
+		
+		
+		<script src="./search.js"></script> 
 	</body>
 </html>
